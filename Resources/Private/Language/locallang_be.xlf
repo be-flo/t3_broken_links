@@ -6,11 +6,11 @@
             <authorEmail>fpeters1392@googlemail.com</authorEmail>
         </header>
         <body>
-            <trans-unit id="backend_layout.default">
-                <source>Default</source>
+            <trans-unit id="broken_links.table">
+                <source>You have broken links for table: </source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.normal">
-                <source>Normal</source>
+            <trans-unit id="broken_links.fields">
+                <source>The broken links occurred in the following fields: </source>
             </trans-unit>
         </body>
     </file>

@@ -1,7 +1,0 @@
-#
-# PageTS for T3 Broken Links
-#
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_broken_links/Configuration/TsConfig/Page/RTE.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_broken_links/Configuration/TsConfig/Page/TCEFORM.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_broken_links/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_broken_links/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">

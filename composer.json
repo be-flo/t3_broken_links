@@ -2,7 +2,6 @@
     "name": "be-flo/t3-broken-links",
     "type": "typo3-cms-extension",
     "description": "",
-    "homepage": "https://florianpeters.de",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "version": "1.0.0",
