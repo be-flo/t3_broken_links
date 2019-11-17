@@ -28,7 +28,7 @@ class InvalidLinkService
 {
     const CACHE_NAME = 'INVALID_LINK_CACHE';
 
-    private const LIVING_CACHE_IDENT = 'CACHE_WARMED_UP';
+    private const CACHE_WARM_UP_PREFIX = 'CACHE_WARMED_UP_';
 
     /**
      * @var FrontendInterface
@@ -96,7 +96,7 @@ class InvalidLinkService
      */
     public function isCacheWarmedUp(int $pid): bool
     {
-        return $this->cache->has(self::LIVING_CACHE_IDENT . $pid);
+        return $this->cache->has(self::CACHE_WARM_UP_PREFIX . $pid);
     }
 
     /**
@@ -104,6 +104,6 @@ class InvalidLinkService
      */
     public function markCacheAsWarmedUp(int $pid): void
     {
-        $this->cache->set(self::LIVING_CACHE_IDENT . $pid, true);
+        $this->cache->set(self::CACHE_WARM_UP_PREFIX . $pid, true);
     }
 }
