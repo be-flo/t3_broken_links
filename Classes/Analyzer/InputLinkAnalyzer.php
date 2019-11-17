@@ -17,8 +17,6 @@ namespace BeFlo\T3BrokenLinks\Analyzer;
  *
  * @author Florian Peters <fpeters1392@googlemail.com>
  */
-
-
 class InputLinkAnalyzer extends RteAnalyzer
 {
     const NAME = 'link_analyzer';
@@ -31,7 +29,7 @@ class InputLinkAnalyzer extends RteAnalyzer
     public function istMatchingForFieldConfiguration(array $fieldConfiguration): bool
     {
         $result = false;
-        if(
+        if (
             !empty($fieldConfiguration['config']['type']) && $fieldConfiguration['config']['type'] == 'input'
             && !empty($fieldConfiguration['config']['renderType']) && $fieldConfiguration['config']['renderType'] == 'inputLink'
         ) {

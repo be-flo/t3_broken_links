@@ -38,7 +38,7 @@ class PageLayoutViewHook extends AbstractBackendNotification implements PageLayo
         if ($alreadyRun === false) {
             GeneralUtility::makeInstance(LinkCheckService::class)->checkTables($parentObject->id);
             $service = GeneralUtility::makeInstance(InvalidLinkService::class);
-            if(!$service->isCacheWarmedUp($parentObject->id)) {
+            if (!$service->isCacheWarmedUp($parentObject->id)) {
                 GeneralUtility::makeInstance(LinkCheckService::class)->checkTables($parentObject->id);
             }
             $elements = $service->getElementsForPid($parentObject->id);

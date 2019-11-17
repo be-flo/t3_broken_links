@@ -35,7 +35,7 @@ abstract class AbstractLinkHandler implements LinkHandlerInterface
     public function checkIfRecordExist(string $table, int $uid): bool
     {
         $result = false;
-        if($uid > 0) {
+        if ($uid > 0) {
             $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable($table);
             $qb = $connection->createQueryBuilder();
             $row = $qb->select('uid')

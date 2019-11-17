@@ -17,8 +17,6 @@ namespace BeFlo\T3BrokenLinks\Analyzer;
  *
  * @author Florian Peters <fpeters1392@googlemail.com>
  */
-
-
 interface AnalyzerInterface
 {
 

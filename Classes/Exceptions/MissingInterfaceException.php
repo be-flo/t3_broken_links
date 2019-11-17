@@ -17,8 +17,6 @@ namespace BeFlo\T3BrokenLinks\Exceptions;
  *
  * @author Florian Peters <fpeters1392@googlemail.com>
  */
-
-
 class MissingInterfaceException extends AbstractException
 {
 

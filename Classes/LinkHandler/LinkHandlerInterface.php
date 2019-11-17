@@ -17,8 +17,6 @@ namespace BeFlo\T3BrokenLinks\LinkHandler;
  *
  * @author Florian Peters <fpeters1392@googlemail.com>
  */
-
-
 interface LinkHandlerInterface
 {
 

@@ -37,7 +37,7 @@ class DatabaseRecordListHook extends AbstractBackendNotification implements Reco
     public function getDBlistQuery($table, $pageId, &$additionalWhereClause, &$selectedFieldsList, &$parentObject)
     {
         $service = GeneralUtility::makeInstance(InvalidLinkService::class);
-        if(!$service->isCacheWarmedUp($pageId)) {
+        if (!$service->isCacheWarmedUp($pageId)) {
             GeneralUtility::makeInstance(LinkCheckService::class)->checkTables($pageId);
         }
         $elements = $service->getElementsForPid($pageId);
